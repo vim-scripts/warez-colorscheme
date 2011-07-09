@@ -37,37 +37,37 @@ endif
 
 " General Group Colours
 " ----------------------------------------------------------------------
-hi! Cursor                       guifg=NONE      guibg=#afafd4   gui=NONE
-hi! CursorIM                     guifg=NONE      guibg=#afafd4   gui=NONE
+hi! Cursor                       guifg=#191919   guibg=#afafd4   gui=NONE
+hi! CursorIM                     guifg=#191919   guibg=#afafd4   gui=NONE
 hi! Directory                    guifg=#5B8EBF   guibg=NONE      gui=NONE
-hi! DiffAdd                      guifg=#181818   guibg=#348686   gui=NONE
-hi! DiffChange                   guifg=#181818   guibg=#735B9C   gui=NONE
-hi! DiffDelete                   guifg=#181818   guibg=#9E5A77   gui=NONE
-hi! DiffText                     guifg=#181818   guibg=#42799D   gui=NONE
+hi! DiffAdd                      guifg=#191919   guibg=#348686   gui=NONE
+hi! DiffChange                   guifg=#191919   guibg=#735B9C   gui=NONE
+hi! DiffDelete                   guifg=#191919   guibg=#9E5A77   gui=NONE
+hi! DiffText                     guifg=#191919   guibg=#42799D   gui=NONE
 hi! ErrorMsg                     guifg=#9E5A77   guibg=#AFAFD4   gui=NONE
 hi! VertSplit                    guifg=NONE      guibg=#424242   gui=NONE
 hi! Folded                       guifg=#42424B   guibg=#42799D   gui=NONE
 hi! FoldColumn                   guifg=#42424B   guibg=#42799D   gui=NONE
-hi! IncSearch                    guifg=NONE      guibg=#60B5B5   gui=NONE
+hi! IncSearch                    guifg=#191919   guibg=#9E5A77   gui=NONE
 hi! LineNr                       guifg=#4C4E4C   guibg=NONE      gui=NONE
 hi! ModeMsg                      guifg=#8E78B8   guibg=NONE      gui=NONE
 hi! MoreMsg                      guifg=#8E78B8   guibg=NONE      gui=NONE
 hi! NonText                      guifg=#407998   guibg=NONE      gui=NONE
-hi! Normal                       guifg=#CBCBCB   guibg=#181818   gui=NONE
+hi! Normal                       guifg=#A5BBB5   guibg=#191919   gui=NONE
 hi! Question                     guifg=#CBCBCB   guibg=NONE      gui=NONE
-hi! Search                       guifg=#181818   guibg=#60B5B5   gui=NONE
+hi! Search                       guifg=#191919   guibg=#9E5A77   gui=NONE
 hi! SpecialKey                   guifg=#AFAFD4   guibg=NONE      gui=NONE
-hi! StatusLine                   guifg=#CBCBCB   guibg=#424242   gui=NONE
-hi! StatusLineNC                 guifg=#181818   guibg=#424242   gui=NONE
+hi! StatusLine                   guifg=#A5BBB5   guibg=#424242   gui=NONE
+hi! StatusLineNC                 guifg=#191919   guibg=#424242   gui=NONE
 hi! Title                        guifg=#9378BE   guibg=NONE      gui=NONE
-hi! Visual                       guifg=NONE      guibg=#4E4E4E   gui=NONE
-hi! VisualNOS                    guifg=NONE      guibg=#4E4E4E   gui=NONE
-hi! WarningMsg                   guifg=NONE      guibg=#4E4E4E   gui=NONE
-hi! WildMenu                     guifg=NONE      guibg=#32867F   gui=NONE
+hi! Visual                       guifg=#191919   guibg=#4E4E4E   gui=NONE
+hi! VisualNOS                    guifg=#191919   guibg=#4E4E4E   gui=NONE
+hi! WarningMsg                   guifg=#191919   guibg=#4E4E4E   gui=NONE
+hi! WildMenu                     guifg=#191919   guibg=#32867F   gui=NONE
 
 " Syntax highlighting
 " ----------------------------------------------------------------------
-hi! Comment                      guifg=#4E4E4E  guibg=NONE      gui=NONE
+hi! Comment                      guifg=#4E4E4E   guibg=NONE      gui=NONE
 
 hi! Constant                     guifg=#32867F   guibg=NONE      gui=NONE
 hi! String                       guifg=#32867F   guibg=NONE      gui=NONE
@@ -76,7 +76,7 @@ hi! Number                       guifg=#32867F   guibg=NONE      gui=NONE
 hi! Boolean                      guifg=#32867F   guibg=NONE      gui=NONE
 hi! Float                        guifg=#32867F   guibg=NONE      gui=NONE
 
-hi! Identifier                   guifg=#AFAFD4   guibg=NONE      gui=NONE
+hi! Identifier                   guifg=#65B5B5   guibg=NONE      gui=NONE
 hi! Function                     guifg=#AFAFD4   guibg=NONE      gui=NONE
 
 hi! Statement                    guifg=#486981   guibg=NONE      gui=NONE
@@ -112,8 +112,8 @@ hi! Todo                         guifg=#9E5A77   guibg=NONE      gui=NONE
 
 " PHP Colours
 " ----------------------------------------------------------------------
-hi! link phpVarSelector Constant
-hi! link phpIdentifier Constant
+hi! link phpVarSelector identifier
+hi! link phpIdentifier identifier
 hi! link phpMethodsVar Structure
 hi! link phpMethods Structure
 
@@ -128,3 +128,18 @@ hi! link vimHiGroup Type
 " HTML Colours
 " ----------------------------------------------------------------------
 hi! link HtmltagName Statement
+hi! link HtmlString Constant
+hi! link HtmlTag Tag
+hi! link HtmlEndTag Tag
+
+" JAVASCRIPT Colours
+" ----------------------------------------------------------------------
+hi! link javaScriptNumber Number
+hi! link javaScriptRegexpString String
+hi! link javaScriptGlobal Constant
+hi! link javaScriptOperator Operator
+hi! link javaScriptIdentifier Identifier
+hi! link javaScriptType Type
+hi! link javaScriptConditional Conditional
+hi! link javaScriptStatement Statement
+hi! link javaScriptRepeat Repeat
